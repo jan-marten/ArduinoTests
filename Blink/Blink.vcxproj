@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Path>C:/Python/Python 3.8.1/Scripts/;C:/Python/Python 3.8.1/;C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS/;C:/Program Files/Intel/Intel(R) Management Engine Components/iCLS/;C:/Windows/system32;C:/Windows;C:/Windows/System32/Wbem;C:/Windows/System32/WindowsPowerShell/v1.0/;C:/Windows/System32/OpenSSH/;C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL;C:/Program Files/Intel/Intel(R) Management Engine Components/DAL;C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common;C:/Program Files/dotnet/;C:/Program Files/Microsoft SQL Server/130/Tools/Binn/;C:/Program Files/Git/cmd;C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/130/Tools/Binn/;C:/Program Files (x86)/Microsoft SQL Server/140/Tools/Binn/;C:/Program Files/Microsoft SQL Server/140/Tools/Binn/;C:/Program Files/Microsoft SQL Server/140/DTS/Binn/;C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/;C:/Program Files (x86)/Microsoft SQL Server/150/DTS/Binn/;C:/Program Files/Intel/WiFi/bin/;C:/Program Files/Common Files/Intel/WirelessCommon/;C:/Users/JanMartenRegeling/AppData/Local/Microsoft/WindowsApps;</Path>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0FA9C3A8-452B-41EF-A418-9102B170F49F}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+    <ProjectName>Blink</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeBuildCommandLine>platformio -f -c visualstudio run</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>platformio -f -c visualstudio run --target clean</NMakeCleanCommandLine>
+    <NMakePreprocessorDefinitions>PLATFORMIO=40100;ARDUINO_AVR_UNO;F_CPU=16000000L;ARDUINO_ARCH_AVR;ARDUINO=10808;__AVR_ATmega328P__</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>C:/Python/projectTest/include;C:/Python/projectTest/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduino-avr/cores/arduino;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduino-avr/variants/standard;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduino-avr/libraries/HID/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduino-avr/libraries/SPI/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduino-avr/libraries/Wire/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/toolchain-atmelavr/avr/include;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include-fixed;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/tool-unity</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeBuildCommandLine>platformio run</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>platformio run --target clean</NMakeCleanCommandLine>
+    <NMakePreprocessorDefinitions>PLATFORMIO=40100;ARDUINO_AVR_UNO;F_CPU=16000000L;ARDUINO_ARCH_AVR;ARDUINO=10808;__AVR_ATmega328P__</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>C:/Python/projectTest/include;C:/Python/projectTest/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduino-avr/cores/arduino;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduino-avr/variants/standard;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduino-avr/libraries/HID/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduino-avr/libraries/SPI/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduino-avr/libraries/Wire/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/toolchain-atmelavr/avr/include;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include-fixed;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/tool-unity</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <None Include="Monitor.ps1">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="platformio.ini" />
+    <None Include="UploadFirmware.ps1">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+  </ItemGroup>
+</Project>
